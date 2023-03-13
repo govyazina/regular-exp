@@ -4,7 +4,8 @@
 
 // Определи, есть ли во входной строке номер СНИЛС.
 function hasSNILS(string) {
-
+    let regexp = /\d{3}-\d{3}-\d{3}\s\d{2}/
+    return regexp.test(string)
 }
 
 
