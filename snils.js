@@ -26,7 +26,8 @@ function grabAllSNILS(string) {
 
 // Зашифруй номера СНИЛС. Example: XXX-XXX-XXX 30.
 function hideAllSNILS(string) {
-
+    let regexp = /\d{3}-\d{3}-\d{3}/g
+    return string.replace(regexp, 'XXX-XXX-XXX')
 }
 
 
